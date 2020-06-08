@@ -1,0 +1,57 @@
+/*formattazione*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+/*definisco header*/
+header{
+    height: 100px;
+    background-color: yellow;
+    margin: 10px;
+}
+/*definisco l'aside sinistro*/
+aside{
+    width:20%;
+    height:300px;
+    padding:10px;
+    float:left;
+}
+
+aside .left{
+    height: 100%;
+    background-color: pink;
+}
+/*definisco il main*/
+main{
+    width:60%;
+    height:500px;
+    padding:10px;
+    float:left;
+}
+main .center{
+    background-color: purple;
+    height: 100%
+}
+/*definisco aside destro che contiene al suo interno due div*/
+aside .right{
+    height: 70%;
+    background-color: pink;
+}
+
+aside .right:first-child{
+    margin-bottom:15px;
+}
+
+/*definisco il footer*/
+footer{
+    height: 80px;
+    background-color: lightblue;
+    margin: 10px;
+}
